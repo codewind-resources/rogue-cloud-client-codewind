@@ -47,7 +47,7 @@ import com.roguecloud.utils.RegisterUser;
 import com.roguecloud.utils.RegisterUser.ClientApiVersionReturn;
 
 /** This class will both start the player AI code, and also serve the browser UI page to the player. */
-@WebServlet("/StartAgent")
+@WebServlet("/")
 public class StartAgentServlet extends HttpServlet {
 
 	private static final Logger log = Logger.getInstance();
@@ -63,8 +63,8 @@ public class StartAgentServlet extends HttpServlet {
 	// Specify your username and password. These will be automatically registered when you first connect
 	// to the game server.
 	
-	public static final String USERNAME = "jgw-08-07-2019";
-	public static final String PASSWORD = "jgw-08-07-2019";
+	public static final String USERNAME = "your-username";
+	public static final String PASSWORD = "your-password";
 	
 	private static RemoteClient constructMyAI() {
 		return new SimpleAI();
@@ -206,11 +206,11 @@ public class StartAgentServlet extends HttpServlet {
 		
 		System.out.println("***********************************************************************************************");
 		System.out.println("*                                                                                             *");
-		System.out.println("*    Agent has started. Watch at: http://localhost:"+val+"/RogueCloudClientLiberty/StartAgent   *");
+		System.out.println("*    Agent has started. Watch at: http://localhost:"+val+"/                                   *");
 		System.out.println("*                                                                                             *");
 		System.out.println("***********************************************************************************************");
 		System.out.println();
-		
+				
 		doInitialConnect(username, password, uuid);
 		
 	}	
