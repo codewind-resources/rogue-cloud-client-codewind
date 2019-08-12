@@ -97,7 +97,7 @@ public class StartAgentServlet extends HttpServlet {
 		atomicAgentStart(uuid);
 		
 		if(lastError != null) {
-			response.setStatus(400);
+			response.setStatus(200);
 			response.getWriter().println(lastError);
 			return;
 		}
@@ -106,7 +106,7 @@ public class StartAgentServlet extends HttpServlet {
 		String password = PASSWORD;
 		
 		if(username == null || password == null || uuid == null) {
-			response.setStatus(400);
+			response.setStatus(200);
 			response.getWriter().println("Missing username, password, or UUID fields.");
 			return;
 		}
