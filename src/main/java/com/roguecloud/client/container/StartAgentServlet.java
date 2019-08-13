@@ -101,7 +101,6 @@ public class StartAgentServlet extends HttpServlet {
 			return;
 		}
 		
-		
 		atomicAgentStart(uuid);
 		
 		if(lastError != null) {
