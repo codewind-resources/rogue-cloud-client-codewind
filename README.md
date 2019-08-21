@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # codewind-rogue-cloud-client
 =======
 ## Microservice
