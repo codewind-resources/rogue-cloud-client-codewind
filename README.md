@@ -1,5 +1,3 @@
-# codewind-rogue-cloud-client
-=======
 ## Microservice
 IBM Cloud Microservice Starter for Java - MicroProfile / Java EE
 
